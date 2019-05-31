@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui = "http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template = "../templates/common.xhtml">	
+        <ui:define name = "content">				
+            <h1 style="text-align: center;">Página de Usuário</h1> 
+
+            <h:form id="frm-res">
+                <p:fieldset legend="Sala que reservei">
+                    Sala: <h:outputText  /> <br />
+                    Local: <h:outputText /> <br />
+                    Data: <h:outputText /> <br />
+                    <p:commandButton value="Cancelar" update="frm-res"/> <br/>
+                </p:fieldset>
+            </h:form>
+
+            <h:form id="frm">
+                <p:fieldset legend="Salas disponíveis para reserva">
+
+                </p:fieldset>
+            </h:form>
+        </ui:define>         
+    </ui:composition>
+</html>
